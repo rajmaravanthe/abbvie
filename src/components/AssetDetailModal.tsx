@@ -91,9 +91,9 @@ const AssetDetailModal: React.FC<AssetDetailModalProps> = ({
               <span className='text-gray-400 mx-2'>•</span>
               <span>{asset.date}</span>
               <span className='text-gray-400 mx-2'>•</span>
-              <span>{asset.views.toLocaleString()} views</span>
+              <span>{asset.views?.toLocaleString() || 0} views</span>
               <span className='text-gray-400 mx-2'>•</span>
-              <span>{asset.likes} likes</span>
+              <span>{asset.likes || 0} likes</span>
             </p>
           </ModalInfoBox>
         </ModalField>
