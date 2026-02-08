@@ -77,16 +77,10 @@ export default function Home() {
         {/* Header */}
         <header className='bg-gray-50 sticky top-0 z-10 shadow-sm'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-6'>
-            <div
-              className='flex items-center justify-between'
-              style={{ marginBottom: "2rem" }}
-            >
+            <div className='flex items-center justify-between mb-8'>
               <div>
                 <h1 className='text-3xl font-bold text-gray-900'>Library</h1>
-                <p
-                  className='text-sm text-gray-500'
-                  style={{ marginTop: "0.25rem" }}
-                >
+                <p className='text-sm text-gray-500 mt-1'>
                   Browse for assets needed to report and present analysis
                 </p>
               </div>
@@ -109,12 +103,12 @@ export default function Home() {
             </div>
 
             {/* Search Bar */}
-            <div style={{ marginBottom: "1.5rem" }}>
+            <div className='mb-6'>
               <SearchBar placeholder='Type to search' />
             </div>
 
             {/* Tabs */}
-            <div style={{ marginTop: "1rem" }}>
+            <div className='mt-4'>
               <Tabs
                 tabs={tabs}
                 activeTab={activeTab}
@@ -125,10 +119,7 @@ export default function Home() {
         </header>
 
         {/* Main Content */}
-        <main
-          className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
-          style={{ paddingTop: "1.5rem" }}
-        >
+        <main className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6'>
           {renderTabContent()}
         </main>
 
