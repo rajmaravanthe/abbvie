@@ -5,6 +5,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: ["mb-8", "mb-6", "mt-1", "mt-4", "pt-6", "pt-8", "pb-6"],
   theme: {
     extend: {
       colors: {
