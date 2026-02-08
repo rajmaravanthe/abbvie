@@ -20,7 +20,7 @@ const Tabs: React.FC<TabsProps> = ({
   className = "",
 }) => {
   return (
-    <div className={`${className}`}>
+    <div className={className}>
       <nav className='flex bg-gray-100 p-2 rounded-lg' aria-label='Tabs'>
         {tabs.map((tab) => {
           const isActive = activeTab === tab.id;
